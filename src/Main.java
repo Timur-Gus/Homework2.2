@@ -34,4 +34,5 @@ public class Main {
         compare.compareStudents(hogwartsStudents[0],hogwartsStudents[1]);
     }
 
+
 }
