@@ -29,4 +29,7 @@ public class Hufflepuff extends Hogwarts {
         return super.toString() + "; Ум: " + mind + "; Мудрость: " + wisdom +
                 "; Остроумие: " + wit + "; Творчество: " + creation;
     }
+    public int sumSkills(){
+        return creation + mind + wit + wisdom;
+    }
 }

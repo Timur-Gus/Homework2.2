@@ -22,6 +22,9 @@ public class Hogwarts {
         return "Студент: " + studentName + "; Сила магии: "
                 + powerMagic + "; Расстояние трангрессии: " + transgressionDistance;
     }
+    public int sumSkills(){
+        return powerMagic + transgressionDistance;
+    }
 
 
 }

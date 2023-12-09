@@ -4,8 +4,7 @@ public class CompareStudents {
         if (secondStudent == null || firstStudent == null){
             System.out.println("Ошибка! Одного или обоих студентов не существует!");
         }
-        else if((firstStudent.getPowerMagic() + firstStudent.getTransgressionDistance()) >
-                (secondStudent.getPowerMagic() + secondStudent.getTransgressionDistance())){
+        else if(firstStudent.sumSkills() > secondStudent.sumSkills()){
             System.out.println(firstStudent.getStudentName() + " обладает большей мощностью магии, чем " +
                     secondStudent.getStudentName());
         } else  {
@@ -17,9 +16,7 @@ public class CompareStudents {
         if (secondStudent == null || firstStudent == null){
             System.out.println("Ошибка! Одного или обоих студентов не существует!");
         }
-        else if((firstStudent.getBravery() + firstStudent.getNobility()
-                + firstStudent.getHonor()) >
-                (secondStudent.getHonor() + secondStudent.getNobility() + secondStudent.getBravery())){
+        else if(firstStudent.sumSkills() > secondStudent.sumSkills()){
             System.out.println(firstStudent.getStudentName() + " лучший Гриффиндорец, чем " +
                     secondStudent.getStudentName());
         } else {
@@ -32,9 +29,7 @@ public class CompareStudents {
         if (secondStudent == null || firstStudent == null){
             System.out.println("Ошибка! Одного или обоих студентов не существует!");
         }
-        else if((firstStudent.getCreation() + firstStudent.getMind()
-                + firstStudent.getWisdom() + firstStudent.getWit()) > (secondStudent.getCreation()
-                + secondStudent.getMind() + secondStudent.getWisdom() + secondStudent.getWit())){
+        else if(firstStudent.sumSkills() > secondStudent.sumSkills()){
             System.out.println(firstStudent.getStudentName() + " лучший Пуффендуец, чем " +
                     secondStudent.getStudentName());
         } else {
@@ -45,9 +40,7 @@ public class CompareStudents {
         if (secondStudent == null || firstStudent == null){
             System.out.println("Ошибка! Одного или обоих студентов не существует!");
         }
-        else if((firstStudent.getHardworking() + firstStudent.getHonesty()
-                + firstStudent.getLoyalty()) > (secondStudent.getHonesty()
-                + secondStudent.getHardworking() + secondStudent.getLoyalty())){
+        else if(firstStudent.sumSkills() > secondStudent.sumSkills()){
             System.out.println(firstStudent.getStudentName() + " лучший Когтевранец, чем " +
                     secondStudent.getStudentName());
         } else {
@@ -58,12 +51,7 @@ public class CompareStudents {
         if (secondStudent == null || firstStudent == null){
             System.out.println("Ошибка! Одного или обоих студентов не существует!");
         }
-        else if((firstStudent.getAmbition() + firstStudent.getCunning()
-                + firstStudent.getDetermination() + firstStudent.getLustOfPower()
-                + firstStudent.getResourcefulness())
-                > (secondStudent.getAmbition() + secondStudent.getCunning()
-                + secondStudent.getDetermination() + secondStudent.getLustOfPower()
-                + secondStudent.getResourcefulness())){
+        else if(firstStudent.sumSkills() > secondStudent.sumSkills()){
             System.out.println(firstStudent.getStudentName() + " лучший Слизеренц, чем " +
                     secondStudent.getStudentName());
         } else {

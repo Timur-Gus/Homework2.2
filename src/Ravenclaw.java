@@ -24,7 +24,9 @@ public class Ravenclaw extends Hogwarts{
         return super.toString() + "; Трудолюбие: " + hardworking + "; Верность: " + honesty +
                 "; Честность: " + loyalty;
     }
-
+    public int sumSkills(){
+        return hardworking + loyalty + honesty;
+    }
 
 }
 

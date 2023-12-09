@@ -43,4 +43,7 @@ public class Slytherin extends Hogwarts {
                     secondStudent.getStudentName());
         }
     }
+    public int sumSkills(){
+        return cunning + determination + ambition + resourcefulness + lustOfPower;
+    }
 }
